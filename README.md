@@ -114,4 +114,21 @@ It has numerous libraries, tools, and frameworks.
 Once you run Java program, you can run on any platform and save lots of time.
 JVM comes with JIT(Just-in-Time) compiler that converts Java source code into low-level machine language. Hence, it runs more faster as a regular application.
 
-21.
+21.What is an object in Java and how is it created?
+     An object is a real-world entity that has a state and behavior. An object has three characteristics:
+              1.	State: represents the data (value) of an object.
+              2.	Behavior: represents the behavior (functionality) of an object such as deposit, withdraw, etc.
+              3.	Identity: An object identity is typically implemented via a unique ID. The value of the ID is not visible to the external user. However, it is used internally by the JVM to identify each object uniquely.
+       An object is created using the ‘new’ keyword. For example:
+            ClassName obj = new ClassName();
+
+22.What is a class in Java
+    A class is a group of objects which have common properties. It is a template or blueprint from which objects are created. It is a logical entity. It can't be physical.
+      A class in Java can contain:
+        Fields
+        Methods
+        Constructors
+        Blocks
+        Nested class and interface
+   
+23.
