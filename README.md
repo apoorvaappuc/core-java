@@ -1,6 +1,7 @@
 1.What is the difference between java and C++?
                        Java	                                                                        C++
         *Java is platform independent.	                                     *C++ is platform dependent.
+<<<<<<< HEAD
         *It can be executed on platform	                   *Needs to be compiled on every platform
         *Portable                                                                    *Not portable
         *There is garbage collection in java                              *There is no garbage collection         
@@ -9,6 +10,14 @@
     Java doesn’t use pointers because they are unsafe and increases the complexity of the program. Since, Java is known for its simplicity of code, adding the concept of pointers will be contradicting. Moreover, since JVM is responsible for implicit memory allocation, thus in order to avoid direct access to memory by the user, pointers are discouraged in Java.
 
 3.What is the platform?
+=======
+        *It can be executed on platform	                                     *Needs to be compiled on every platform
+        *Portable                                                            *Not portable
+        *There is garbage collection in java                                 *There is no garbage collection         
+        * There are no pointers                                              * There are pointers in C++
+ 
+2.What is the platform?
+>>>>>>> 260b1abadd8e928ee153c31c24d3986198045ba3
       A platform is the hardware or software environment in which a piece of software is executed. There are two types of platforms, software-based and hardware-based. Java provides the software-based platform.
 
 4.What is portability?
@@ -20,11 +29,19 @@
 6.What is platform independent language?
     Any programming languages that do not expects the platform to be the same at the time of compilation  and execution are called platform independent language.
 
+<<<<<<< HEAD
 7.Why Java is platform independent? 
     Platform independent practically means “write once run anywhere”. Java is called so because of its byte codes which can run on any system irrespective of its underlying operating system.
 
 8.What gives Java its 'write once and run anywhere' nature?
      The bytecode. Java compiler converts the Java programs into the class file (Byte Code) which is the intermediate language between source code and machine code. This bytecode is not platform specific and can be executed on any computer.
+=======
+6.Why Java is platform independent? 
+    Platform independent practically means “write once run anywhere”. Java is called so because of its byte codes which can run on any system irrespective of its underlying         operating system.
+
+7.What gives Java its 'write once and run anywhere' nature?
+     The bytecode. Java compiler converts the Java programs into the class file (Byte Code) which is the intermediate language between source code and machine code. This                bytecode is not platform specific and can be executed on any computer.
+>>>>>>> 260b1abadd8e928ee153c31c24d3986198045ba3
 
 9.List the features of Java Programming language.
    There are the following features in Java Programming Language.
@@ -33,25 +50,25 @@
    o  Object-Oriented:
          Java follows the object-oriented paradigm which allows us to maintain our code as the combination of different type of objects that incorporates both data and behavior
    o  Portable:
-          Java supports read-once-write-anywhere approach. We can execute the Java program on every machine. Java program (.java) is converted to bytecode (.class) which can be easily run on every machine.
+          Java supports read-once-write-anywhere approach. We can execute the Java program on every machine. Java program (.java) is converted to bytecode (.class) which can be        easily run on every machine.
    o  Platform Independent: 
-          Java is a platform independent programming language. It is different from other programming languages like C and C++ which needs a platform to be executed. Java comes with its platform on which its code is executed. Java doesn't depend upon the operating system to be executed.
+          Java is a platform independent programming language. It is different from other programming languages like C and C++ which needs a platform to be executed. Java comes        with its platform on which its code is executed. Java doesn't depend upon the operating system to be executed.
    o Secured: 
          Java is secured because it doesn't use explicit pointers. Java also provides the concept of ByteCode and Exception handling which makes it more secured.
    o Robust: 
        Java is a strong programming language as it uses strong memory management. The concepts like Automatic garbage collection, Exception handling, etc. make it more robust.
    o Architecture Neutral:
-        Java is architectural neutral as it is not dependent on the architecture. In C, the size of data types may vary according to the architecture (32 bit or 64 bit) which doesn't exist in Java.
+        Java is architectural neutral as it is not dependent on the architecture. In C, the size of data types may vary according to the architecture (32 bit or 64 bit) which           doesn't exist in Java.
    o Interpreted: 
          Java uses the Just-in-time (JIT) interpreter along with the compiler for the program execution.
    o High Performance: 
-         Java is faster than other traditional interpreted programming languages because Java bytecode is "close" to native code. It is still a little bit slower than a compiled language (e.g., C++).
+         Java is faster than other traditional interpreted programming languages because Java bytecode is "close" to native code. It is still a little bit slower than a compiled         language (e.g., C++).
    o Multithreaded: 
-         We can write Java programs that deal with many tasks at once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memory for each thread. It shares a common memory area. Threads are important for multi-media, Web applications, etc.
+         We can write Java programs that deal with many tasks at once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memory for             each thread. It shares a common memory area. Threads are important for multi-media, Web applications, etc.
    o Distributed: 
-         Java is distributed because it facilitates users to create distributed applications in Java. RMI and EJB are used for creating distributed applications. This feature of Java makes us able to access files by calling the methods from any machine on the internet.
+         Java is distributed because it facilitates users to create distributed applications in Java. RMI and EJB are used for creating distributed applications. This feature of         Java makes us able to access files by calling the methods from any machine on the internet.
    o Dynamic: 
-         Java is a dynamic language. It supports dynamic loading of classes. It means classes are loaded on demand. It also supports functions from its native languages, i.e., C and C++.
+         Java is a dynamic language. It supports dynamic loading of classes. It means classes are loaded on demand. It also supports functions from its native languages, i.e., C       and C++.
 
 10.What are the various access specifiers in Java?
       In Java, access specifiers are the keywords which are used to define the access scope of the method, class, or a variable. In Java, there are four access specifiers given below.
@@ -74,6 +91,14 @@
       public static void main(String[] args){}
       String args[] are array objects we need to pass command line arguements. 
 
+<<<<<<< HEAD
+=======
+14.Explain about main() method in java?
+      Main() method is starting point of execution for all java applications.
+      public static void main(String[] args){}
+      String args[] are array objects we need to pass command line arguements. 
+
+>>>>>>> 260b1abadd8e928ee153c31c24d3986198045ba3
 15.Explain JVM, JRE and JDK? 
     *JVM (Java Virtual Machine): 
        JVM(Java Virtual Machine) acts as a run-time engine to run Java applications. JVM is the one that actually calls the main method present in a Java code. JVM is a part of JRE(Java Runtime Environment).
@@ -94,6 +119,10 @@
               1.	Bootstrap ClassLoader: This is the first classloader which is the superclass of Extension classloader. It loads the rt.jar file which contains all class files of Java Standard Edition like java.lang package classes, java.net package classes, java.util package classes, java.io package classes, java.sql package classes, etc.
               2.	Extension ClassLoader: This is the child classloader of Bootstrap and parent classloader of System classloader. It loads the jar files located inside $JAVA_HOME/jre/lib/ext directory.
               3.	System/Application ClassLoader: This is the child classloader of Extension classloader. It loads the class files from the classpath. By default, the classpath is set to the current directory. You can change the classpath using "-cp" or "-classpath" switch. It is also known as Application classloader
+<<<<<<< HEAD
+=======
+
+>>>>>>> 260b1abadd8e928ee153c31c24d3986198045ba3
 18.Why use JDK?
 Here are the important reasons of using JDK:
 JDK contains tools required to write Java programs, and JRE to execute them.
@@ -114,6 +143,7 @@ It has numerous libraries, tools, and frameworks.
 Once you run Java program, you can run on any platform and save lots of time.
 JVM comes with JIT(Just-in-Time) compiler that converts Java source code into low-level machine language. Hence, it runs more faster as a regular application.
 
+<<<<<<< HEAD
 21.What is an object in Java and how is it created?
      An object is a real-world entity that has a state and behavior. An object has three characteristics:
               1.	State: represents the data (value) of an object.
@@ -182,6 +212,8 @@ When are static variables loaded in memory ?
 
 What happens if there are multiple main methods inside one class in Java?
   The program can't compile as the compiler says that the method has been already defined inside the class.
+=======
+>>>>>>> 260b1abadd8e928ee153c31c24d3986198045ba3
 
 How Many Types Of Datatypes Are There In Java?
 Java has two types of datatypes. 
