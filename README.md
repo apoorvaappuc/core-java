@@ -131,4 +131,61 @@ JVM comes with JIT(Just-in-Time) compiler that converts Java source code into lo
         Blocks
         Nested class and interface
    
-23.
+23.What are the ways initialize an object list them?
+     *By using reference variable
+     *By using method
+      *By using constructor
+
+24.What are the ways initialize an object list them?
+    *By new keyword
+    *By newInstance() method
+    *By clone() method
+    *By factory() method
+    *By serialization
+
+25.What Is The Variable?
+     Variable is a name which is given to a memory cell. Variable is also known as a container (or box) which is used to store data value during program execution in memory.
+
+    example:
+    public class VariableDemo {
+ 
+    public static void main(String[] args) {
+ 
+        // variable declaration
+        int number;    
+     
+        // initialization / assign a value to variable
+        number = 10;
+ 
+        // modify variable value and assign it again
+        number = number + 20;
+    }
+ 
+}
+What are local variables in Java programming language?
+   Local variables are variables declared within a method body.
+     Local variables live only as long as the method in which it is declared remains on the stack.Local variables are stored on the stack.
+
+What are static variables in Java programming language?
+   Static variables (or fields) are variables declared within the class body, outside of any methods or blocks, and declared with 'static' keyword.
+   Static variables have the longest scope. They are created when the class is loaded, and remain in memory as long as the class remains loaded in JVM.
+
+What are instance variables in Java programming language?
+   Instance variable are variables declared within the class body, outside of any method or block, and declared without 'static' keyword.
+   Instance variables have the second highest scope. Instance variables are created when a new class instance is created, and live until the instance is removed from memory.
+
+Can static method access instance variables ?
+    Though Static methods cannot access the instance variables directly, They can access them using instance handler.  
+
+When are static variables loaded in memory ?
+    They are loaded at runtime when the respective Class is loaded. 
+
+What happens if there are multiple main methods inside one class in Java?
+  The program can't compile as the compiler says that the method has been already defined inside the class.
+
+How Many Types Of Datatypes Are There In Java?
+Java has two types of datatypes. 
+1.	Primitive Data Type 
+        There are 8 primitive data types in java i.e. short, byte, int, long, float, double, boolean and char.
+2.	Non-primitive Data Type
+      – array, class, interface and enum are non-primitive data types. If you have noticed, String is not primary / primitive data type in java. String is a name of class. Similarly you can also define your own custom class types like Student, User, etc.
