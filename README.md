@@ -216,3 +216,140 @@ Java has two types of datatypes.
         There are 8 primitive data types in java i.e. short, byte, int, long, float, double, boolean and char.
 2.	Non-primitive Data Type
       – array, class, interface and enum are non-primitive data types. If you have noticed, String is not primary / primitive data type in java. String is a name of class. Similarly you can also define your own custom class types like Student, User, etc.
+      
+     
+ What is an Operator in Java?
+     A operator is a special symbol that tells the compiler to perform specific mathematical or logical operations. It is generally used in a program to perform a particular function on operands.
+
+What is a symbolic operator in Java? What are the types of operators based on symbols?
+    If a symbol like +, -, *, etc is used as an operator, it is called symbolic operator.
+   There are mainly eight types of operators based on symbols. They are as follows:
+
+     Arithmetic operators ⇒ +, -, *, /, etc.
+     Relational operators ⇒ <, >, <=, >=, = =, !=.
+     Logical operators ⇒ &&, ||, !.
+     Assignment operators ⇒ =,
+    Increment and decrement operators ⇒ + +, – –
+    Conditional operators ⇒ ?:
+    Bitwise operators ⇒ &, !, ^, ~, <<, >>, >>>
+    Shift operators ⇒ <<, >>, >>>.
+
+What is Expression in Java?
+     An expression in java is a combination of operators and operands that is used to perform mathematical or logical calculations. In simple words, it is a combination of variables, constants, and operators.
+     For example, an expression is x+5. Here, the operand x is a variable, operand 5 is a constant, and + is an operator that acts on these two operands and produces the desired result.
+
+Is there any difference between x += y and x = x + y expressions?
+       No, there is no any difference between x += y and x = x + y expressions. Both are equivalent to each other.
+
+What is Arithmetic operators in Java?
+     Operators that are used to performing fundamental arithmetic operations such as addition, subtraction, multiplication, and division on numeric data types are called arithmetic operators.
+
+What are Relational operators in Java?
+    Relational operators in Java are those operators that are used to perform the comparison between two numeric values or two quantities. They are generally used in looping and branching statements to create conditions.
+
+What are Logical operators in Java?
+      Logical operators in Java are those operators that are used to form compound conditions by combining two or more conditions or relational expressions.
+       These operators are also called Boolean operators because they return a boolean value.
+
+What is an Assignment operator in Java?
+       An operator which is used to store a value into a particular variable is called assignment operator in java.
+
+What is Unary operator in Java?
+    A operator that acts on a single operand is called unary operator. It uses a single variable.
+
+What is Ternary operator in Java?
+     A operator that acts on three operands is called ternary operator. It uses three variables.
+
+What is if statement?
+    if statement is the most basic decision-making statement in the java programming language.
+The syntax for the if statements is as given below:
+
+if ( condition ){
+	----
+	code to be executed
+	----
+}
+
+There are two possible values of the condition, i.e. true and false.
+The code block after the if statement will execute only if the value of the condition statement is true. If the value of the condition statement is false, the code block will not be executed.
+
+How does if-else statement work?
+   if-else statement is somewhat similar to the if statement, we are just adding an extra block of the code after the if statement.
+   If the value of the condition statement is true, the if block will be executed, else the else block will be executed.
+
+   Let’s see the syntax for if-else statement below:
+if-else statement syntaxJava
+if (condition statement) {
+	---
+	code to be executed
+	---
+
+} else {
+	---
+	code to be executed
+	---
+}
+
+
+What Happens When We Forget to Put a break Statement in a case Clause of a switch?
+    The switch statement falls-trough. This means that it will continue the execution of all case labels until if finds a break statement, even though those labels don't match the expression's value.
+     Here's an example to demonstrate this:
+
+int operation = 2;
+int number = 10;
+
+switch (operation) {
+    case 1:
+        number = number + 10;
+        break;
+    case 2:
+        number = number - 4;
+    case 3:
+        number = number / 3;
+    case 4:
+        number = number * 10;
+        break;
+}
+After running the code, number holds the value 20, instead of 6. This can be useful in situations when we want to associate the same action with multiple cases.
+
+What Types of Loops Does Java Support?
+     Java offers three different types of loops: for, while, and do-while.    
+    A for loop provides a way to iterate over a range of values. It's most useful when we know in advance how many times a task is going to be repeated:
+
+for (int i = 0; i < 10; i++) {
+     // ...
+}
+A while loop can execute a block of statements while a particular condition is true:
+while (iterator.hasNext()) {
+    // ...
+}
+A do-while is a variation of a while statement in which the evaluation of the boolean expression is at the bottom of the loop. This guarantees that the code will execute at least once:
+
+do {
+    // ...
+} while (choice != -1);
+
+What Is an Exception?
+    An exception is an abnormal event that occurs during the execution of a program and disrupts the normal flow of the program's instructions.
+
+How Can You Handle an Exception?
+    By using a try-catch-finally statement:
+freestar
+try {
+    // ...
+} catch (ExceptionType1 ex) {
+    // ...
+} catch (ExceptionType2 ex) {
+    // ...
+} finally {
+    // ...
+}
+The block of code in which an exception may occur is enclosed in a try block. This block is also called “protected” or “guarded” code.
+If an exception occurs, the catch block that matches the exception being thrown is executed, if not, all catch blocks are ignored.
+The finally block is always executed after the try block exits, whether an exception was thrown or not inside it.
+
+In Which Situations the finally Block May Not Be Executed?
+      When the JVM is terminated while executing the try or catch blocks, for instance, by calling System.exit(), or when the executing thread is interrupted or killed, then the finally block is not executed.
+
+What Is the Difference Between an Exception and Error?
+       An exception is an event that represents a condition from which is possible to recover, whereas error represents an external situation usually impossible to recover from.
